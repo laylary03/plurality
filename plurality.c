@@ -43,9 +43,9 @@ int main(int argc, string argv[])
             string unsorted_vote[voters];
             for (int i = 0; i < voters; i++)
             {
-                unsorted_vote[i] = get_string("Vote: ");
                 do
                 {
+                    unsorted_vote[i] = get_string("Vote: ");
                     if (!vote(unsorted_vote[i]))
                     {
                         printf("Invalid vote.\n");
